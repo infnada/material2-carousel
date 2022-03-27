@@ -26,7 +26,7 @@ export class MatCarouselHammerConfig extends HammerGestureConfig {
   exports: [MatCarouselComponent, MatCarouselSlideComponent]
 })
 export class MatCarouselModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<MatCarouselModule> {
     return {
       ngModule: MatCarouselModule,
       providers: [
